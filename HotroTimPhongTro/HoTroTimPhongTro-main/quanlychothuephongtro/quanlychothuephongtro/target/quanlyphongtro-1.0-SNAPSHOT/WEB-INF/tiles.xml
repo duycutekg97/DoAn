@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+<!DOCTYPE tiles-definitions PUBLIC 
+    "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+    "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="baseLayout"
+                template="/WEB-INF/pages/layout/base/base.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header"
+                       value="/WEB-INF/pages/layout/user/header.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="footer"
+                       value="/WEB-INF/pages/layout/user/footer.jsp" />
+        
+        <put-attribute name="javascripts"
+                       value="/WEB-INF/pages/layout/user/javascript.jsp" />
+        
+        <put-attribute name="stylesheet"
+                       value="/WEB-INF/pages/layout/user/stylesheet.jsp" />
+        
+        <put-attribute name="sidebar_left"
+                       value="/WEB-INF/pages/layout/user/sidebar_left.jsp" />
+    </definition>
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/index.jsp" />
+    </definition>
+  <definition name="indexuser" extends="baseLayout">
+        <put-attribute name="title" value="Users" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/indexuser.jsp" />
+    </definition>
+    <definition name="user" extends="baseLayout">
+        <put-attribute name="title" value="Users" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/function/user.jsp" />
+    </definition>
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="Users" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/function/login.jsp" />
+    </definition>
+    <definition name="register" extends="baseLayout">
+        <put-attribute name="title" value="Users" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/function/register.jsp" />
+    </definition>
+    <definition name="indexMotel" extends="baseLayout">
+        <put-attribute name="title" value="Motel" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/indexMotel.jsp" />
+    </definition>
+    <definition name="motelDetail" extends="baseLayout">
+        <put-attribute name="title" value="Motel" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/function/motelDetail.jsp" />
+    </definition>
+    <definition name="addMotel" extends="baseLayout">
+        <put-attribute name="title" value="Motel" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/function/addMotel.jsp" />
+    </definition>
+    <definition name="indexFindAccommodation" extends="baseLayout">
+        <put-attribute name="title" value="Motel" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/indexFindAccommodation.jsp" />
+    </definition>
+    <definition name="indexAwaitingReview" extends="baseLayout">
+        <put-attribute name="title" value="Motel" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/indexAwaitingReview.jsp" />
+    </definition>
+     <definition name="errPage" extends="baseLayout">
+        <put-attribute name="title" value="Motel" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/errPage.jsp" />
+    </definition>
+    <definition name="userDetails" extends="baseLayout">
+        <put-attribute name="title" value="Motel" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/function/userDetails.jsp" />
+    </definition>
+    <definition name="chart" extends="baseLayout">
+        <put-attribute name="title" value="Motel" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/function/chart.jsp" />
+    </definition>
+    <definition name="gpt" extends="baseLayout">
+        <put-attribute name="title" value="GPT" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/gpt.jsp" />
+    </definition>
+</tiles-definitions>
+
